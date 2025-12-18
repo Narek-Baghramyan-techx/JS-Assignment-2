@@ -11,6 +11,7 @@ function division(a, b) {
 }
 
 // test for division function
+console.log('Division test');
 console.log(division(10, 2)); // 5
 console.log(division(7, 0));  // Error: Division by zero is not allowed.
 
@@ -24,6 +25,7 @@ function capitalizeWords(str) {
 }
 
 // test for capitalizeWords function
+console.log('Word capitalize test');
 console.log(capitalizeWords("hello world")); // "Hello World"
 console.log(capitalizeWords("javaScript is fun")); // "JavaScript Is Fun"
 console.log(capitalizeWords("")); // "Not valid str"
@@ -39,19 +41,21 @@ function findMax(arr) {
 }
 
 // test for findMax function
+console.log('Find max test');
 console.log(findMax([1, 3, 2, 8, 5])); // 8
 console.log(findMax([-10, -3, -5]));   // -3
 console.log(findMax([]));               // "Array is empty."
 
 // 4. Math Utility 
 
-function calculateAverage(values) {
+const calculateAverage = function (values) {
     if (values.length === 0) return 0;
     const sum = values.reduce((total, num) => total + num, 0);
     return sum / values.length;
 }
 
 // test for calculateAverage function
+console.log('Average calculate test');
 console.log(calculateAverage([10, 20, 30])); // 20
 console.log(calculateAverage([5, 15, 25, 35])); // 20
 console.log(calculateAverage([])); // 0
@@ -67,17 +71,17 @@ function reverseString(str) {
 }
 
 // test for reverseString function
+console.log('Reverse string test');
 console.log(reverseString("hello")); // "olleh"
 console.log(reverseString("JavaScript")); // "tpircSavaJ"
 console.log(reverseString("")); // "String is empty."
 
 // 6. Array Utility
 
-function removeDuplicates(arr) {
-    return [...new Set(arr)];
-}
+const removeDuplicates = (arr) => [...new Set(arr)];
 
 // test for removeDuplicates function
+console.log('Duplicates remove test');
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
 console.log(removeDuplicates(['a', 'b', 'a', 'c', 'b'])); // ['a', 'b', 'c']
 console.log(removeDuplicates([])); // []
